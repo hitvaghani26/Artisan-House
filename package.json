@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "This is demo website of hostel ",
   "main": "index.js",
+  "engines": {"node": ">=18"},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon",
+    "build":"npm install  && rimraf  ./build && tsc",
+    "start": "node index.js"
   },
   "author": "Hit Vaghani",
   "license": "ISC",

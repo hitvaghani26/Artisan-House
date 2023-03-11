@@ -8,7 +8,7 @@ const port = process.env.port || 5000;
 var contactobj = []
 
 async function main() {
-    await mongoose.connect('mongodb://127.0.0.1:27017/AST')
+    await mongoose.connect('mongodb+srv://hit2:hit738@cluster0.lxngmp3.mongodb.net/AST')
 }
 main().catch(err => console.log(err));
 const app = express();
