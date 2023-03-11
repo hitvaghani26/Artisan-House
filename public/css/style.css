@@ -1,0 +1,466 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&display=swap');
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+/* hide scrollbar but allow scrolling */
+body {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+}
+
+body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fragment Mono', monospace, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#navbar {
+    background-color: #1a1a1a;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 16px;
+    overflow: hidden;
+}
+
+#navbar .logo {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+    padding: 13px 0;
+    display: inline-block;
+}
+
+#navbar ul {
+    float: right;
+    list-style: none;
+    overflow: hidden;
+    text-align: center;
+    display: block;
+}
+
+#navbar ul li {
+    font-size: 16px;
+    float: left;
+    padding: 21px 10px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-out;
+    margin: 0 0px;
+}
+
+
+#navbar ul li:hover, 
+#navbar ul li.current {
+    background-color: rgba(250, 135, 4, 0.06);
+    border: 1px solid #FA8704;
+    cursor: pointer;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1.2px;
+}
+
+
+#navbar ul li{
+    font-size: 16px;
+    float: left;
+    padding: 21px 10px;
+    border: 1px solid transparent;
+    margin: 0px 0px;
+    transition: all 0.3s ease-out;
+
+}
+
+#navbar ul li:hover {
+
+    background-color: rgba(250, 135, 4, 0.06);
+    border: 1px solid #FA8704;
+    cursor: pointer;
+
+}
+.current{
+    background-color: rgba(250, 135, 4, 0.06);
+    border: 1px solid #FA8704;
+
+}
+
+
+
+/* Navbar End */
+
+/* showcase start */
+
+#showcase {
+    background: url("img/showcase-modified.jpg") no-repeat center center/cover;
+    background-color: aqua;
+    min-height: 600px;
+    position: relative;
+    text-align: center;
+
+}
+
+#showcase::before {
+    backdrop-filter: blur(2px);
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.678);
+
+}
+
+.showcase-content {
+    /* background-color: black; */
+    color: white;
+    padding-top: 180px;
+    z-index: 2;
+    filter: blur(0px);
+}
+
+.showcase-content h1 {
+    padding-bottom: 40px;
+    letter-spacing: 1px;
+    font-size: 40px;
+
+}
+
+.text-primary {
+    color: #FA8704;
+}
+
+.showcase-content .lead {
+    letter-spacing: 0.5px;
+    font-size: 20px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background: black;
+    margin-top: 30px;
+    padding: 20px;
+    word-spacing: -5px;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FA8704;
+    z-index: -1;
+    transform: scale(0);
+    transition: all 0.3s ease;
+}
+
+.btn:hover::before {
+    transform: scale(1);
+}
+
+/* showcase End */
+
+/* home info start */
+
+#home-info {}
+
+#info-img {
+    background: url("img/home-info-edit.jpg") no-repeat center center/cover;
+    width: 50%;
+    height: 400px;
+    float: left;
+}
+
+#info-contain {
+    box-sizing: border-box;
+    text-align: center;
+    width: 50%;
+    float: right;
+    background-color: black;
+    height: 400px;
+    color: white;
+}
+
+#info-contain h1 {
+    text-align: center;
+    padding-top: 30px;
+}
+
+#info-contain p {
+    padding: 20px 70px 0px 70px;
+    word-spacing: 1px;
+    line-height: 2em;
+}
+
+.bg-light {
+    box-sizing: border-box;
+    background-color:#fa870428;
+    border: 2px solid transparent;
+ transition: border 0.3s ease-out;
+}
+.bg-light:hover{
+    border: 2px solid #ff8800;
+}
+
+
+#info-contain .btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ff8800;
+    z-index: -1;
+    transform: scale(1);
+    
+    
+    transition: all 0.3s ease;
+}
+
+#info-contain .btn:hover::before {
+    transform: scale(0);
+
+}
+
+/* home info ends */
+
+/* facility start */
+.background-dark{
+    background-color: #ff8800;
+    color: white;
+    
+}
+.facility-item{
+    box-sizing: border-box;
+    float: left;
+    width: 29%;
+    height: 300px;
+    margin: 2% 2%;
+    padding: auto;
+    text-align: center;
+}
+.three-facility,.facility-content{
+    width: 100%;
+   /* background-color: aqua; */
+  
+    clear: both;
+}
+.facility-item{
+    margin-top: 30px;
+}
+.facility-item img{
+    margin-top: 66px;
+    height: 120px;
+    width: 120px;
+}
+.facility-item p {
+    margin-top: 23px;
+    font-size: 18px;
+}
+.rating img{
+    margin-top: 90px;
+    height: 30px;
+    width: 30px;
+}
+/* facility Ends */
+
+/* footer start*/
+
+footer{
+    box-sizing: border-box;
+    width: 100wh;
+    text-align: center;
+    background-color: black;
+    color: rgb(187, 187, 187);
+    height: 30px;
+    font-size: 14px;
+    border:  2px solid transparent;
+    
+    
+    
+}
+footer div{
+    
+    width: 90%;
+    border: 0px solid transparent;
+    margin: 5px auto ;
+}
+
+/* footer end */
+
+/* About us start here*/
+.about-info{
+
+    background-color: #38373625;
+}
+.info-left{
+    float: left;
+    width: 50%;
+
+
+}
+.info-left h1{
+    text-align: center;
+    margin: 20px;
+    
+}
+.info-left p {
+    line-height: 1.2em;
+    margin: 20px 0px;
+
+}
+.info-right{
+    float: right;
+    max-width: 50%;
+}
+.info-right img{
+    margin: 80px 0px;
+    height: 300px;
+    border-radius: 20px;
+}
+/* about us end here */
+
+/* testimonial start */
+.testimonial{
+    height: 600px;
+    background: url("img/about-bg.jpg") no-repeat center center/cover;
+    overflow: auto;
+    color: white;
+}
+.testimonial h1{
+    margin: 40px 0px;
+    text-align: center;
+}
+.testimonial-box{
+    margin: 20px 0px;
+    background-color: #ffb157;
+    padding: 20px;
+    overflow: auto  ;
+    border-radius: 5px;
+}
+.testimonial-box img{
+    float: left;
+    width: 100px;
+    margin: 10px 20px;
+    border-radius: 50%;
+    
+    
+}
+.testimonial-box h2{
+    
+}
+.testimonial-box P{
+    margin-top: 10PX;
+    
+}
+/* testimonial End */
+
+/* contact start */
+.contactus{
+    /* background-color: #FA8704; */
+    background-image: linear-gradient(to right, #fa8704c9, #fa870498) ;
+    color: white;
+}
+.contactus h1{
+    text-align: center;
+    margin: 30px 0px;
+
+}
+.contactus_body{
+   
+    background-color: #3024169a;
+   backdrop-filter: blur(20px);
+    padding: 50px;
+    margin:  50px auto;
+    width: 700px;
+    border-radius: 30px;
+}
+.contactus form{
+    
+    margin: auto;
+    width: 500px;
+}
+.contactus label, .inputfield{
+    display:block;
+    width: 100%;
+}
+
+.inputfield{
+    margin: 10px 0px 30px 10px;
+    padding: 16px 10px;
+    border-radius: 15px;
+    font-size: 20px;
+    border: 0pc solid transparent;
+    background-image: linear-gradient( #99999934, #99999934) ;
+    
+}
+textarea{
+    font-size: 18px;
+}
+.inputfield:focus{
+ outline:  none;
+}
+
+
+.contactus button{
+    margin: 10px 0px 50px 0px;
+}
+
+/* contact end */
+/* admin */
+.admin{
+    background-color: black;
+    color: white;
+}
+.admin-body P{
+    
+    display: inline-block;
+    width: 80%;
+    background-color: #fa870475;
+}
+.admin-body h4{
+    
+    width: 10%;
+    display: inline-block;
+    background-color:  #fa8704;
+    
+}
+.admin-body p, .admin-body h4{
+    padding: 10px;
+    font-weight: normal;
+    font-size: large;
+}
+.contact{
+    width: 100%;
+    border-radius: 30px;
+    margin: 20px 0px;
+    background-color: #fa870463;
+    padding: 10px 0px;
+}
+.contact-item{
+    /* background-color: rgb(255, 0, 200); */
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 5px 0px;
+}

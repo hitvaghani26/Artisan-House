@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisan House</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <%- include('partials/header'); %>
+        <div class="admin">
+            <div class="container" style="">
+                <div class="admin-body">
+                    <br><br>
+                    <h1><span class="text-primary">The Contact List</span></h1>
+                    <% users.forEach((contactitem)=> { %>
+                        <div class="contact">
+                            <div class="contact-item">
+                                <h4>name</h4>
+                                <p>
+                                    <%=contactitem.name%>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <h4>Email</h4>
+                                <p>
+                                    <%=contactitem.email%>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <h4>message</h4>
+                                <p>
+                                    <%=contactitem.message%>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <form action="/admin" method="post">
+                                    <button class="btn"  name="id" value="<%=contactitem._id%>">Delete</button>
+                                </form>
+                            </div>
+                        </div>
+                        <% }) %>
+                </div>
+            </div>
+        </div>
+
+
+
+        <%- include('partials/footer') %>
+</body>
+
+</html>

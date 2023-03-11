@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisan House</title>
+    <link rel="stylesheet" href="css/style.css">
+   
+
+</head>
+
+<body>
+    <p>This is demo website and this is website is made with html and simple css like float, background-color etc.</p>
+   <p>if you want see data then click here</p> 
+   <form action="" method="post">
+    <button style="padding: 5px; margin: 10px;">admin</button>
+   </form>
+
+    <%- include('partials/header'); %>
+
+    <div id="showcase">
+        <div class="container">
+            <div class="showcase-content">
+                <h1> <span class="text-primary">Stay, Relax, and Unwind</span> at Our Hostel</h1>
+                <p class="lead">Escape to our welcoming hostel in City and discover the perfect blend of comfort and
+                    convenience. Our central location puts you in the heart of the action, with easy access to local
+                    attractions and activities. With our friendly staff and modern amenities, you'll feel right at home
+                    during your stay. Reserve your spot today and experience the best of City with us.</p>
+                <a class="btn" href="">Reserve Your Stay</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="home-info">
+        <div id="info-img">
+
+        </div>
+
+        <div id="info-contain">
+            <h1><span class="text-primary">Artisan House</span></h1>
+            <p>&emsp; At Artisan House Hostel, we believe that travel is not just about exploring new places, but also
+                about connecting with the local culture and community. We offer a range of activities and events that
+                allow our guests to experience the local culture and arts scene, from art exhibits to live music
+                performances.
+            </p>
+            <a class="btn bg-light" href="">Read More</a>
+        </div>
+
+    </div>
+    <div id="facility">
+        <div class="facility-content container">
+            <div class="three-facility">
+
+                <div id="facility1"  class="facility-item">
+                    <img src="css/img/wifi.png" alt="">
+                    <p>Free Wi-fi</p>
+                </div>
+
+                <div id="facility2" class="facility-item background-dark">
+                    <img src="css/img/gym.png" alt="">
+                    <p>Gym | Exercise room</p>
+                </div>
+
+                <div id="facility3" class="facility-item">
+                    <img src="css/img/dinner.png" alt="">
+                    <p>Free dinner</p>
+                </div>
+            </div>
+
+
+            <div class="three-facility">
+                <div id="facility4" class="facility-item background-dark">
+                    <img src="/css/img/location.png" alt="">
+                    <p>Good location</p>
+                </div>
+
+
+                <div id="facility5" class="facility-item rating">
+                    <img src="/css/img/full star.png" alt="">
+                    <img src="/css/img/full star.png" alt="">
+                    <img src="/css/img/full star.png" alt="">
+                    <img src="/css/img/full star.png" alt="">
+                    <img src="/css/img/halfstar.png" alt="">
+                    <p>4.5 Rating</p>
+                </div>
+
+
+                <div id="facility6" class="facility-item background-dark">
+                    <img src="css/img/meeting.png" alt="">
+                    <p>conference facilities</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('partials/footer') %>
+</body>
+
+</html>
